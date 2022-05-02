@@ -57,7 +57,8 @@ namespace Calculadora
             // 
             // txtResultado
             // 
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(12, 23);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
@@ -69,7 +70,6 @@ namespace Calculadora
             // 
             // btn01
             // 
-            this.btn01.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn01.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn01.Location = new System.Drawing.Point(12, 258);
             this.btn01.Name = "btn01";
@@ -77,10 +77,10 @@ namespace Calculadora
             this.btn01.TabIndex = 1;
             this.btn01.Text = "1";
             this.btn01.UseVisualStyleBackColor = true;
+            this.btn01.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn2
             // 
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(70, 258);
             this.btn2.Name = "btn2";
@@ -88,10 +88,10 @@ namespace Calculadora
             this.btn2.TabIndex = 2;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn3
             // 
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(128, 258);
             this.btn3.Name = "btn3";
@@ -99,6 +99,7 @@ namespace Calculadora
             this.btn3.TabIndex = 3;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btnSub
             // 
@@ -113,7 +114,6 @@ namespace Calculadora
             // 
             // btn4
             // 
-            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(12, 204);
             this.btn4.Name = "btn4";
@@ -121,10 +121,10 @@ namespace Calculadora
             this.btn4.TabIndex = 5;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn5
             // 
-            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.Location = new System.Drawing.Point(70, 204);
             this.btn5.Name = "btn5";
@@ -132,10 +132,10 @@ namespace Calculadora
             this.btn5.TabIndex = 6;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn6
             // 
-            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.Location = new System.Drawing.Point(128, 204);
             this.btn6.Name = "btn6";
@@ -143,6 +143,7 @@ namespace Calculadora
             this.btn6.TabIndex = 7;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btnMult
             // 
@@ -157,7 +158,6 @@ namespace Calculadora
             // 
             // btn7
             // 
-            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.Location = new System.Drawing.Point(12, 150);
             this.btn7.Name = "btn7";
@@ -165,10 +165,10 @@ namespace Calculadora
             this.btn7.TabIndex = 9;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn8
             // 
-            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.Location = new System.Drawing.Point(70, 150);
             this.btn8.Name = "btn8";
@@ -176,10 +176,10 @@ namespace Calculadora
             this.btn8.TabIndex = 10;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn9
             // 
-            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.Location = new System.Drawing.Point(128, 150);
             this.btn9.Name = "btn9";
@@ -187,6 +187,7 @@ namespace Calculadora
             this.btn9.TabIndex = 11;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btnDiv
             // 
@@ -245,7 +246,6 @@ namespace Calculadora
             // 
             // btn0
             // 
-            this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.Location = new System.Drawing.Point(12, 312);
             this.btn0.Name = "btn0";
@@ -253,7 +253,7 @@ namespace Calculadora
             this.btn0.TabIndex = 17;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btnVirgula
             // 
@@ -350,13 +350,10 @@ namespace Calculadora
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn01);
             this.Controls.Add(this.txtResultado);
-            this.Enabled = false;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
-            this.Load += new System.EventHandler(this.FrmCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

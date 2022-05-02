@@ -17,28 +17,18 @@ namespace Calculadora
             InitializeComponent();
         }
 
-        private void FrmCalculadora_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtResultado_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true; //não permite digitação
         }
 
-        private void AgregarNumero(string numero)
+        private void AgregarNumero(object sender, EventArgs e)
         {
+            var btn = ((Button)sender);
             if (txtResultado.Text == "0")
                 txtResultado.Text = "";
 
-            txtResultado.Text += numero;
-        }
-
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            var button = ((Button)sender);
-            AgregarNumero(button.Text);
+            txtResultado.Text += btn.Text;
         }
     }
 }
