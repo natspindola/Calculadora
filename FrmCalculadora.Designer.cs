@@ -253,6 +253,7 @@ namespace Calculadora
             this.btn0.TabIndex = 17;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnVirgula
             // 
@@ -355,6 +356,7 @@ namespace Calculadora
             this.Name = "FrmCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.FrmCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
