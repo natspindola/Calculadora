@@ -16,5 +16,10 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void txtResultado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
     }
 }
