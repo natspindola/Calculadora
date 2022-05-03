@@ -59,6 +59,12 @@ namespace Calculadora
         {
             var btn = ((Button)sender);
             numero1 = Convert.ToDouble(txtResultado.Text);
+            if(operador == '√')
+            {
+                numero1 = Math.Sqrt(numero1);
+                txtResultado.Text = numero1.ToString();
+            }
+
             operador = Convert.ToChar(btn.Tag);
 
             txtResultado.Text = "0";
