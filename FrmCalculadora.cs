@@ -64,6 +64,11 @@ namespace Calculadora
                 numero1 = Math.Sqrt(numero1);
                 txtResultado.Text = numero1.ToString();
             }
+            else if(operador == '²')
+            {
+                numero1 = Math.Pow(numero1,2);
+                txtResultado.Text = numero1.ToString();
+            }
 
             operador = Convert.ToChar(btn.Tag);
 
