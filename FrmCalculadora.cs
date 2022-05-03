@@ -31,7 +31,28 @@ namespace Calculadora
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
+            numero2 = Convert.ToDouble(txtResultado.Text);
 
+            if(operador == '+')
+            {
+                txtResultado.Text = (numero1 + numero2).ToString();
+                numero1 = Convert.ToDouble(txtResultado.Text);
+            }
+            else if(operador == '-')
+            {
+                txtResultado.Text = (numero1 - numero2).ToString();
+                numero1 = Convert.ToDouble(txtResultado.Text);
+            }
+            else if (operador == '*')
+            {
+                txtResultado.Text = (numero1 * numero2).ToString();
+                numero1 = Convert.ToDouble(txtResultado.Text);
+            }
+            else if (operador == '/')
+            {
+                txtResultado.Text = (numero1 / numero2).ToString();
+                numero1 = Convert.ToDouble(txtResultado.Text);
+            }
         }
 
         private void clickOperador(object sender, EventArgs e)
