@@ -105,6 +105,19 @@ namespace Calculadora
             else { txtResultado.Text = "0"; }
         }
 
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            numero1 = 0;
+            numero2 = 0;
+            operador = '\0';
+            txtResultado.Text = "0";
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = "0";
+        }
+
         private int CalcularPorcentagem(double total, double porcentagem)
         {
             var resultado = ((double)porcentagem / 100) * total;
