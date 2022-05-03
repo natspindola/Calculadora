@@ -50,7 +50,7 @@ namespace Calculadora
             this.btnVirgula = new System.Windows.Forms.Button();
             this.btnResultado = new System.Windows.Forms.Button();
             this.btnSoma = new System.Windows.Forms.Button();
-            this.btnUmX = new System.Windows.Forms.Button();
+            this.btnXQuad = new System.Windows.Forms.Button();
             this.btnPorcen = new System.Windows.Forms.Button();
             this.btnRaiz = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -289,16 +289,17 @@ namespace Calculadora
             this.btnSoma.UseVisualStyleBackColor = true;
             this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
-            // btnUmX
+            // btnXQuad
             // 
-            this.btnUmX.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnUmX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUmX.Location = new System.Drawing.Point(244, 204);
-            this.btnUmX.Name = "btnUmX";
-            this.btnUmX.Size = new System.Drawing.Size(52, 48);
-            this.btnUmX.TabIndex = 21;
-            this.btnUmX.Text = "1/x";
-            this.btnUmX.UseVisualStyleBackColor = true;
+            this.btnXQuad.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnXQuad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXQuad.Location = new System.Drawing.Point(244, 204);
+            this.btnXQuad.Name = "btnXQuad";
+            this.btnXQuad.Size = new System.Drawing.Size(52, 48);
+            this.btnXQuad.TabIndex = 21;
+            this.btnXQuad.Tag = "²";
+            this.btnXQuad.Text = "x²";
+            this.btnXQuad.UseVisualStyleBackColor = true;
             // 
             // btnPorcen
             // 
@@ -319,6 +320,7 @@ namespace Calculadora
             this.btnRaiz.Name = "btnRaiz";
             this.btnRaiz.Size = new System.Drawing.Size(52, 48);
             this.btnRaiz.TabIndex = 23;
+            this.btnRaiz.Tag = "√";
             this.btnRaiz.Text = "√";
             this.btnRaiz.UseVisualStyleBackColor = true;
             // 
@@ -329,7 +331,7 @@ namespace Calculadora
             this.ClientSize = new System.Drawing.Size(309, 370);
             this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.btnPorcen);
-            this.Controls.Add(this.btnUmX);
+            this.Controls.Add(this.btnXQuad);
             this.Controls.Add(this.btnSoma);
             this.Controls.Add(this.btnResultado);
             this.Controls.Add(this.btnVirgula);
@@ -383,7 +385,7 @@ namespace Calculadora
         private System.Windows.Forms.Button btnVirgula;
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Button btnSoma;
-        private System.Windows.Forms.Button btnUmX;
+        private System.Windows.Forms.Button btnXQuad;
         private System.Windows.Forms.Button btnPorcen;
         private System.Windows.Forms.Button btnRaiz;
     }
