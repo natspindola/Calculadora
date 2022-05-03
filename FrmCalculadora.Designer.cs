@@ -60,13 +60,13 @@ namespace Calculadora
             this.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(12, 23);
+            this.txtResultado.MaxLength = 15;
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(284, 57);
             this.txtResultado.TabIndex = 0;
             this.txtResultado.Text = "0";
             this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtResultado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResultado_KeyPress);
             // 
             // btn01
             // 
@@ -287,6 +287,7 @@ namespace Calculadora
             this.btnSoma.TabIndex = 20;
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
             // btnUmX
             // 

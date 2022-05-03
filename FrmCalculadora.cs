@@ -12,14 +12,12 @@ namespace Calculadora
 {
     public partial class FrmCalculadora : Form
     {
+        double numero1 = 0, numero2 = 0;
+        char operador;
+
         public FrmCalculadora()
         {
             InitializeComponent();
-        }
-
-        private void txtResultado_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true; //não permite digitação
         }
 
         private void AgregarNumero(object sender, EventArgs e)
@@ -29,6 +27,19 @@ namespace Calculadora
                 txtResultado.Text = "";
 
             txtResultado.Text += btn.Text;
+        }
+
+        private void clickOperador(object sender, EventArgs e)
+        {
+            var btn = ((Button)sender);
+            numero1 = Convert.ToDouble(txtResultado.Text);
+            operador = Convert.ToChar(btn.Text);
+        }
+
+        private void btnSoma_Click(object sender, EventArgs e)
+        {
+            numero1 = Convert.ToDouble(txtResultado.Text);
+            operador = '+';
         }
     }
 }
