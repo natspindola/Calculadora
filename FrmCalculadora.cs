@@ -73,6 +73,7 @@ namespace Calculadora
                     break;
             }
 
+            operador = Convert.ToChar(btn.Tag);
             numero1 = Convert.ToDouble(txtResultado.Text);
             if(operador == '√')
             {
@@ -87,13 +88,21 @@ namespace Calculadora
             else if (operador == '%')
             {
                 operador = Convert.ToChar(btn.Tag);
-                txtResultado.Text = "0";                
+                txtResultado.Text = numero1.ToString();
             }
             else
             {
-                operador = Convert.ToChar(btn.Tag);
                 txtResultado.Text = "0";
             }
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            if(txtResultado.Text.Length > 1)
+            {
+                txtResultado.Text = txtResultado.Text.Substring(0, txtResultado.Text.Length - 1);
+            }
+            else { txtResultado.Text = "0"; }
         }
 
         private int CalcularPorcentagem(double total, double porcentagem)
