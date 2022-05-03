@@ -109,8 +109,10 @@ namespace Calculadora
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(52, 48);
             this.btnSub.TabIndex = 4;
+            this.btnSub.Tag = "-";
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
+            this.btnSub.Click += new System.EventHandler(this.clickOperador);
             // 
             // btn4
             // 
@@ -153,8 +155,10 @@ namespace Calculadora
             this.btnMult.Name = "btnMult";
             this.btnMult.Size = new System.Drawing.Size(52, 48);
             this.btnMult.TabIndex = 8;
+            this.btnMult.Tag = "*";
             this.btnMult.Text = "*";
             this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.Click += new System.EventHandler(this.clickOperador);
             // 
             // btn7
             // 
@@ -197,8 +201,10 @@ namespace Calculadora
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(52, 48);
             this.btnDiv.TabIndex = 12;
+            this.btnDiv.Tag = "/";
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
+            this.btnDiv.Click += new System.EventHandler(this.clickOperador);
             // 
             // btnApagar
             // 
@@ -241,8 +247,10 @@ namespace Calculadora
             this.btnMaisMenos.Name = "btnMaisMenos";
             this.btnMaisMenos.Size = new System.Drawing.Size(52, 48);
             this.btnMaisMenos.TabIndex = 16;
+            this.btnMaisMenos.Tag = "±";
             this.btnMaisMenos.Text = "±";
             this.btnMaisMenos.UseVisualStyleBackColor = true;
+            this.btnMaisMenos.Click += new System.EventHandler(this.clickOperador);
             // 
             // btn0
             // 
@@ -276,6 +284,7 @@ namespace Calculadora
             this.btnResultado.TabIndex = 19;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = true;
+            this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
             // 
             // btnSoma
             // 
@@ -285,9 +294,10 @@ namespace Calculadora
             this.btnSoma.Name = "btnSoma";
             this.btnSoma.Size = new System.Drawing.Size(52, 48);
             this.btnSoma.TabIndex = 20;
+            this.btnSoma.Tag = "+";
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
-            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
+            this.btnSoma.Click += new System.EventHandler(this.clickOperador);
             // 
             // btnXQuad
             // 
@@ -300,6 +310,7 @@ namespace Calculadora
             this.btnXQuad.Tag = "²";
             this.btnXQuad.Text = "x²";
             this.btnXQuad.UseVisualStyleBackColor = true;
+            this.btnXQuad.Click += new System.EventHandler(this.clickOperador);
             // 
             // btnPorcen
             // 
@@ -309,8 +320,10 @@ namespace Calculadora
             this.btnPorcen.Name = "btnPorcen";
             this.btnPorcen.Size = new System.Drawing.Size(52, 48);
             this.btnPorcen.TabIndex = 22;
+            this.btnPorcen.Tag = "%";
             this.btnPorcen.Text = "%";
             this.btnPorcen.UseVisualStyleBackColor = true;
+            this.btnPorcen.Click += new System.EventHandler(this.clickOperador);
             // 
             // btnRaiz
             // 
@@ -323,6 +336,7 @@ namespace Calculadora
             this.btnRaiz.Tag = "√";
             this.btnRaiz.Text = "√";
             this.btnRaiz.UseVisualStyleBackColor = true;
+            this.btnRaiz.Click += new System.EventHandler(this.clickOperador);
             // 
             // FrmCalculadora
             // 

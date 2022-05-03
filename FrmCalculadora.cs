@@ -29,17 +29,18 @@ namespace Calculadora
             txtResultado.Text += btn.Text;
         }
 
+        private void btnResultado_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void clickOperador(object sender, EventArgs e)
         {
             var btn = ((Button)sender);
             numero1 = Convert.ToDouble(txtResultado.Text);
-            operador = Convert.ToChar(btn.Text);
-        }
+            operador = Convert.ToChar(btn.Tag);
 
-        private void btnSoma_Click(object sender, EventArgs e)
-        {
-            numero1 = Convert.ToDouble(txtResultado.Text);
-            operador = '+';
+            txtResultado.Text = "0";
         }
     }
 }
