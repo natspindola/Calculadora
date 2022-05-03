@@ -53,11 +53,26 @@ namespace Calculadora
                 txtResultado.Text = (numero1 / numero2).ToString();
                 numero1 = Convert.ToDouble(txtResultado.Text);
             }
+            else if(operador == '%')
+            {
+                var porcentagem = CalcularPorcentagem(numero1, numero2);
+                txtResultado.Text = porcentagem.ToString();
+            }
         }
 
         private void clickOperador(object sender, EventArgs e)
         {
             var btn = ((Button)sender);
+
+            switch (btn.Text)
+            {
+                case "%":
+                    operador = '%';
+                    break;
+                default:
+                    break;
+            }
+
             numero1 = Convert.ToDouble(txtResultado.Text);
             if(operador == '√')
             {
@@ -69,10 +84,23 @@ namespace Calculadora
                 numero1 = Math.Pow(numero1,2);
                 txtResultado.Text = numero1.ToString();
             }
+            else if (operador == '%')
+            {
+                operador = Convert.ToChar(btn.Tag);
+                txtResultado.Text = "0";                
+            }
+            else
+            {
+                operador = Convert.ToChar(btn.Tag);
+                txtResultado.Text = "0";
+            }
+        }
 
-            operador = Convert.ToChar(btn.Tag);
+        private int CalcularPorcentagem(double total, double porcentagem)
+        {
+            var resultado = ((double)porcentagem / 100) * total;
 
-            txtResultado.Text = "0";
+            return Convert.ToInt32(resultado);
         }
     }
 }
