@@ -118,6 +118,21 @@ namespace Calculadora
             txtResultado.Text = "0";
         }
 
+        private void btnVirgula_Click(object sender, EventArgs e)
+        {
+            if(!txtResultado.Text.Contains(","))
+            {
+                txtResultado.Text += ",";
+            }
+        }
+
+        private void btnMaisMenos_Click(object sender, EventArgs e)
+        {
+            numero1 = Convert.ToDouble(txtResultado.Text);
+            numero1 *= -1;
+            txtResultado.Text = numero1.ToString();
+        }
+
         private int CalcularPorcentagem(double total, double porcentagem)
         {
             var resultado = ((double)porcentagem / 100) * total;

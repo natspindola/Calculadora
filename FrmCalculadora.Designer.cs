@@ -253,7 +253,7 @@ namespace Calculadora
             this.btnMaisMenos.Tag = "±";
             this.btnMaisMenos.Text = "±";
             this.btnMaisMenos.UseVisualStyleBackColor = true;
-            this.btnMaisMenos.Click += new System.EventHandler(this.clickOperador);
+            this.btnMaisMenos.Click += new System.EventHandler(this.btnMaisMenos_Click);
             // 
             // btn0
             // 
@@ -276,6 +276,7 @@ namespace Calculadora
             this.btnVirgula.TabIndex = 18;
             this.btnVirgula.Text = ",";
             this.btnVirgula.UseVisualStyleBackColor = true;
+            this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // btnResultado
             // 
