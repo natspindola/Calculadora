@@ -50,8 +50,15 @@ namespace Calculadora
             }
             else if (operador == '/')
             {
-                txtResultado.Text = (numero1 / numero2).ToString();
-                numero1 = Convert.ToDouble(txtResultado.Text);
+                if (txtResultado.Text != "0")
+                {
+                    txtResultado.Text = (numero1 / numero2).ToString();
+                    numero1 = Convert.ToDouble(txtResultado.Text);
+                }
+                else
+                {
+                    
+                }
             }
             else if(operador == '%')
             {
